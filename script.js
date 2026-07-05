@@ -1,13 +1,35 @@
-const input=document.getElementById("search");
-const iframe=document.getElementById("browser");
-const button=document.getElementById("go");
+function searchWeb(){
 
-button.onclick=function(){
+const word=document.getElementById("search").value;
 
-const word=input.value;
+if(word.trim()=="") return;
 
-iframe.src=
+window.open(
 "https://duckduckgo.com/?q="+
-encodeURIComponent(word);
+encodeURIComponent(word),
+"_blank"
+);
+
+}
+
+const stars=document.getElementById("stars");
+
+for(let i=0;i<120;i++){
+
+const s=document.createElement("div");
+
+s.className="star";
+
+const size=Math.random()*3+1;
+
+s.style.width=size+"px";
+s.style.height=size+"px";
+
+s.style.left=Math.random()*100+"vw";
+s.style.top=Math.random()*100+"vh";
+
+s.style.animationDelay=Math.random()*3+"s";
+
+stars.appendChild(s);
 
 }
