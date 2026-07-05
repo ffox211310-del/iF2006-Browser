@@ -1,0 +1,27 @@
+body{
+margin:0;
+background:#222;
+}
+
+#topbar{
+display:flex;
+padding:10px;
+background:#444;
+}
+
+#search{
+flex:1;
+font-size:18px;
+padding:8px;
+}
+
+#go{
+margin-left:10px;
+padding:8px 20px;
+}
+
+#browser{
+width:100%;
+height:calc(100vh - 60px);
+border:none;
+}
