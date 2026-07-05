@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>iF2006</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="topbar">
+<div id="stars"></div>
+
+<div class="center">
+
+<h1>iF2006</h1>
 
 <input
 id="search"
-placeholder="検索ワードを入力">
+placeholder="Search with DuckDuckGo">
 
-<button id="go">
-検索
+<button onclick="searchWeb()">
+SEARCH
 </button>
 
 </div>
-
-<iframe id="browser"></iframe>
 
 <script src="script.js"></script>
 
